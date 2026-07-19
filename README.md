@@ -29,6 +29,12 @@ Between any **two layers** of the **Neural Network**, the same process happens
 
 **Stage 3:** The Activation Function converts the linear value (dot product) into a non-linear value so that the neural network can learn the complex patterns in data.
 
+## Results
+
+**Accuracy on Training Data:**  99.4%
+**Accuracy on Testing Data:**  97.54%
+**Macro F1 Score:** 97.49%
+
 ## How to Run the Project:
 
 **1. Install Dependencies:**
