@@ -16,7 +16,8 @@ My neural network is trained on the MNIST dataset to recognize the digits (0-9)
 
 <img width="569" height="299" alt="image" src="https://github.com/user-attachments/assets/366a4e2c-4cf1-4caa-9ed5-76c4f420630d" />
 
-Between any two layers of the neural network, the same process happens
+
+Between any **two layers** of the **Neural Network**, the same process happens
 
 **Stage 1:** Take the input values.
 
