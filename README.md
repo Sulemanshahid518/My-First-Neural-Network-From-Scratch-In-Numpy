@@ -12,7 +12,11 @@ My neural network is trained on the MNIST dataset to recognize the digits (0-9)
 
 - **idx2numpy:** Used to convert the MNIST dataset's idx format into NumPy arrays.
 
-## Basic Knowledge about **Neural Network**:
+## Project Objective:
+
+The goal of the project is to understand gradients, backpropagation, and forward propagation, as well as how neural networks learn complex patterns in  data.
+
+## Basic Knowledge about **Neural Network:**
 
 <img width="569" height="299" alt="image" src="https://github.com/user-attachments/assets/366a4e2c-4cf1-4caa-9ed5-76c4f420630d" />
 
@@ -24,10 +28,6 @@ Between any **two layers** of the **Neural Network**, the same process happens
 **Stage 2:** Multiply the weights and then sum them. It's actually a dot product. It's a linear value.
 
 **Stage 3:** The Activation Function converts the linear value (dot product) into a non-linear value so that the neural network can learn the complex patterns in data.
-
-## Project Objective:
-
-The goal of the project is to understand gradients, backpropagation, and forward propagation, as well as how neural networks learn complex patterns in  data.
 
 ## How to Run the Project:
 
