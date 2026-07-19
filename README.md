@@ -36,9 +36,9 @@ Between any **two layers** of the **Neural Network**, the same process happens
 Forward Pass:
 
 <img width="634" height="354" alt="image" src="https://github.com/user-attachments/assets/637c1bcc-dd20-46a7-b57b-6a28b9ddca21" />
->
 
-Firstly, starting with random thetas and taking the  dot product with input features and passing the result to the hidden layer. The hidden layer applies the activation functions (ReLU or sigmoid) that transform the linear dot product  into non-linear values, and so on for the remaining layers.
+
+Firstly, starting with random thetas and taking the  dot product with input features and passing the result to the hidden layer. The hidden layer applies the activation functions (ReLU or sigmoid, or a leaky ReLU) that transform the linear dot product  into non-linear values, and so on for the remaining layers.
 
 
 **Q:** How to choose the shape of thetas?
