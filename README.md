@@ -31,6 +31,19 @@ Between any **two layers** of the **Neural Network**, the same process happens
 
 ## Neural Architecture
 
+Forward Pass:
+
+Firstly, starting with random thetas and taking the  dot product with input features and passing the result to the next layer. The next layer applies the activation functions (ReLU or sigmoid) that transform the linear dot product  into non-linear values, and so on for the remaining layers.
+
+**Q:**How to choose the shape of thetas?
+
+thetas_array=(neurons in current layer+bias, neurons in the next layer+bias)
+like in our dataset  we have 784 features,  and I chose the number of neurons in the second layer to be 64, so I selected the theta shape (784+1,64+1)
+
+Backpropagate:
+
+
+
 ## Results
 
 **Loss Graph**
