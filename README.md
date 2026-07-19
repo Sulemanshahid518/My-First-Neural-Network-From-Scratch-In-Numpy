@@ -29,7 +29,17 @@ Between any **two layers** of the **Neural Network**, the same process happens
 
 **Stage 3:** The Activation Function converts the linear value (dot product) into a non-linear value so that the neural network can learn the complex patterns in data.
 
+## Neural Architecture
+
 ## Results
+
+**Loss Graph**
+
+<img width="322" height="262" alt="image" src="https://github.com/user-attachments/assets/e6db33c1-79e1-4f08-b7b9-c076e84e47b0" />
+
+**Confusion Matrix**
+
+<img width="335" height="315" alt="image" src="https://github.com/user-attachments/assets/52a871f1-c146-49b7-b7b9-13010115cd8d" />
 
 **Accuracy on Training Data:**  99.4%
 
