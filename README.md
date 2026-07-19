@@ -18,7 +18,8 @@ The goal of the project is to understand gradients, backpropagation, and forward
 
 ## Basic Knowledge about **Neural Network:**
 
-<img width="655" height="343" alt="image" src="https://github.com/user-attachments/assets/de8c8cd9-9dd2-43e6-b821-ea74233eb733" />
+<img width="548" height="304" alt="image" src="https://github.com/user-attachments/assets/196409d9-5cd2-43fe-abc6-4b40f86f2487" />
+
 
 
 
@@ -34,7 +35,8 @@ Between any **two layers** of the **Neural Network**, the same process happens
 
 Forward Pass:
 
-<img width="668" height="344" alt="image" src="https://github.com/user-attachments/assets/daece90c-b2f7-4a2d-bd63-9d407c9456b4" />
+<img width="634" height="354" alt="image" src="https://github.com/user-attachments/assets/637c1bcc-dd20-46a7-b57b-6a28b9ddca21" />
+>
 
 Firstly, starting with random thetas and taking the  dot product with input features and passing the result to the hidden layer. The hidden layer applies the activation functions (ReLU or sigmoid) that transform the linear dot product  into non-linear values, and so on for the remaining layers.
 
