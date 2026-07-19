@@ -12,5 +12,5 @@ Between any two layers of the neural network, the same process happens
 
 **Stage 2:** Multiply the weights and then sum them. It's actually a dot product. It's a linear value.
 
-**Stage 3:** The Activation Function converts the linear value (dot product) into a non-linear value so that the neural network can learn the complex pattern in data.
+**Stage 3:** The Activation Function converts the linear value (dot product) into a non-linear value so that the neural network can learn the complex patterns in data.
 
