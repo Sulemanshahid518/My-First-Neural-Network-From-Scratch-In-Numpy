@@ -33,7 +33,10 @@ Between any **two layers** of the **Neural Network**, the same process happens
 
 Forward Pass:
 
+<img width="668" height="344" alt="image" src="https://github.com/user-attachments/assets/daece90c-b2f7-4a2d-bd63-9d407c9456b4" />
+
 Firstly, starting with random thetas and taking the  dot product with input features and passing the result to the next layer. The next layer applies the activation functions (ReLU or sigmoid) that transform the linear dot product  into non-linear values, and so on for the remaining layers.
+
 
 **Q:** How to choose the shape of thetas?
 
