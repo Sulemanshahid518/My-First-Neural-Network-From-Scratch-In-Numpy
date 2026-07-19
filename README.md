@@ -5,11 +5,13 @@ The goal of the project is to understand gradients, backpropagation, and forward
 
 My neural network is trained on the MNIST dataset to recognize the digits (0-9)
 
-* I used NumPy heavily for manipulating arrays, dot product, and other calculations.
+### Tools & Libraries Used:
 
-* Matplotlib to plot loss and confusion matrix.
+- **NumPy:** Used heavily for manipulating arrays, calculating dot products, and handling other core math operations.
 
-* idx2numpy is used to convert the idx format into a NumPy array.
+- **Matplotlib:** Used to plot training loss and the confusion matrix.
+
+- **idx2numpy:** Used to convert the MNIST dataset's idx format into NumPy arrays.
 
 <img width="569" height="299" alt="image" src="https://github.com/user-attachments/assets/366a4e2c-4cf1-4caa-9ed5-76c4f420630d" />
 
