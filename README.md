@@ -12,7 +12,7 @@ My neural network is trained on the MNIST dataset to recognize the digits (0-9)
 
 - **idx2numpy:** Used to convert the MNIST dataset's idx format into NumPy arrays.
 
-##Basic Knowledge about **Neural Network**:
+## Basic Knowledge about **Neural Network**:
 
 <img width="569" height="299" alt="image" src="https://github.com/user-attachments/assets/366a4e2c-4cf1-4caa-9ed5-76c4f420630d" />
 
