@@ -28,3 +28,12 @@ Between any **two layers** of the **Neural Network**, the same process happens
 ## Project Objective:
 
 The goal of the project is to understand gradients, backpropagation, and forward propagation, as well as how neural networks learn complex patterns in  data.
+
+## How to Run the Project:
+
+**1. Install Dependencies:**
+
+Make sure you have Python installed. Then run the following command in your terminal (or command prompt) to install the required libraries:
+
+```bash
+pip install numpy matplotlib idx2numpy kagglehub
