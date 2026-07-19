@@ -1,7 +1,6 @@
 # My-First-Neural-Network-From-Scratch-In-Numpy
 
 ## Project Overview:
-The goal of the project is to understand gradients, backpropagation, and forward propagation, as well as how neural networks learn complex patterns in  data.
 
 My neural network is trained on the MNIST dataset to recognize the digits (0-9)
 
@@ -23,3 +22,6 @@ Between any two layers of the neural network, the same process happens
 
 **Stage 3:** The Activation Function converts the linear value (dot product) into a non-linear value so that the neural network can learn the complex patterns in data.
 
+##Project Objective:
+
+The goal of the project is to understand gradients, backpropagation, and forward propagation, as well as how neural networks learn complex patterns in  data.
