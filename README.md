@@ -12,6 +12,8 @@ My neural network is trained on the MNIST dataset to recognize the digits (0-9)
 
 - **idx2numpy:** Used to convert the MNIST dataset's idx format into NumPy arrays.
 
+- **kagglehub:** Used to download the MNIST dataset directly from Kaggle.
+
 ## Project Objective:
 
 The goal of the project is to understand gradients, backpropagation, and forward propagation, as well as how neural networks learn complex patterns in  data.
@@ -60,14 +62,15 @@ Below is a clear table of the hyperparameters used (or commonly used) for this p
 
 | Hyperparameter    | Value               | Description |
 |-------------------|---------------------|-------------|
-| learning_rate     | 0.01                | Step size for gradient descent |
-| epochs            | 50                  | Number of full passes through the training set |
-| batch_size        | 32                  | Number of samples per gradient update |
-| hidden_neurons    | 64                  | Neurons in the hidden layer (example in this README) |
-| activation        | ReLU / Sigmoid      | Activation function for hidden layer |
+| learning_rate     | 0.14                | Step size for gradient descent |
+| epochs            | 70                  | Number of full passes through the training set |
+| batch_size        | 500                 | Number of samples per gradient update |
+| hidden_neurons    | 64                  | Neurons in the hidden layer |
+| hidden_neurons_2  | 64                  | Neurons in the second hidden layer |
+| activation        | Leaky ReLU          | Activation function for hidden layers |
 | output_activation | Softmax             | Activation for the output layer (multiclass) |
 | loss_function     | Cross-entropy       | Loss used for training |
-| optimizer         | SGD                 | Optimization algorithm (e.g., SGD, Adam) |
+| optimizer         | SGD                 | Optimization algorithm |
 | weight_init       | Random normal       | Weight initialization method |
 | regularization    | None                | L2 or dropout if used |
 
@@ -87,12 +90,130 @@ Below is a clear table of the hyperparameters used (or commonly used) for this p
 
 **Macro F1 Score:** 97.49%
 
+## Dependencies
+
+The project requires the following Python libraries:
+
+| Library | Version | Purpose |
+|---------|---------|---------|
+| **Python** | 3.7+ | Programming language |
+| **NumPy** | 1.19+ | Array operations and mathematical computations |
+| **Matplotlib** | 3.3+ | Data visualization (plotting loss graphs and confusion matrices) |
+| **idx2numpy** | 1.2+ | Convert MNIST idx format to NumPy arrays |
+| **kagglehub** | Latest | Download MNIST dataset from Kaggle |
+
 ## How to Run the Project:
 
-**1. Install Dependencies:**
+### **Step 1: Install Python**
 
-Make sure you have Python installed. Then run the following command in your terminal (or command prompt) to install the required libraries:
+Ensure you have Python 3.7 or higher installed on your system. You can download it from [python.org](https://www.python.org/downloads/).
+
+### **Step 2: Install Dependencies**
+
+Open your terminal (Command Prompt on Windows, Terminal on macOS/Linux) and run the following command:
 
 ```bash
 pip install numpy matplotlib idx2numpy kagglehub
 ```
+
+**Breakdown of each package:**
+- **numpy**: For numerical computations and array operations
+- **matplotlib**: For plotting training loss and confusion matrix
+- **idx2numpy**: For converting MNIST dataset format
+- **kagglehub**: For downloading the MNIST dataset from Kaggle
+
+### **Step 3: Set Up Kaggle API (Optional but Recommended)**
+
+If you want to download the MNIST dataset using `kagglehub`, you may need to set up your Kaggle API credentials:
+
+1. Go to [Kaggle.com](https://www.kaggle.com/) and sign in
+2. Navigate to **Settings** → **API** → **Create New API Token**
+3. This downloads a `kaggle.json` file
+4. Place it in the correct directory:
+   - **Windows**: `C:\Users\<YourUsername>\.kaggle\kaggle.json`
+   - **macOS/Linux**: `~/.kaggle/kaggle.json`
+5. Set permissions (Linux/macOS only):
+   ```bash
+   chmod 600 ~/.kaggle/kaggle.json
+   ```
+
+### **Step 4: Run the Jupyter Notebook**
+
+Once dependencies are installed, run the notebook using one of the following methods:
+
+#### **Option A: Using Jupyter Notebook (Recommended)**
+
+```bash
+pip install jupyter
+jupyter notebook Neural_Network_from_scratch_in_numpy_.ipynb
+```
+
+#### **Option B: Using Google Colab (No Setup Required)**
+
+1. Upload the notebook to [Google Colab](https://colab.research.google.com/)
+2. Run each cell sequentially
+
+#### **Option C: Using VS Code**
+
+1. Install the Jupyter extension in VS Code
+2. Open the `.ipynb` file
+3. Run each cell by clicking the play button
+
+### **Step 5: Execute the Cells in Order**
+
+The notebook contains the following main sections:
+
+1. **Install Dependencies** - Installs idx2numpy (already done if pip install was successful)
+2. **Import Libraries** - Imports numpy, pandas, matplotlib, idx2numpy, and kagglehub
+3. **Download Dataset** - Downloads the MNIST dataset from Kaggle (requires Kaggle API setup)
+4. **Data Preprocessing** - Normalizes images (0-255 → 0-1) and adds bias terms
+5. **Initialize Network** - Creates random weight matrices (thetas) for each layer
+6. **Training Loop** - Trains the neural network using forward and backward propagation
+7. **Visualize Loss** - Plots the loss graph to show training progress
+8. **Evaluate Performance** - Tests on both training and testing datasets
+9. **Generate Confusion Matrix** - Creates a heatmap showing prediction accuracy per digit
+
+### **Step 6: View Results**
+
+After running all cells, you will see:
+
+- **Loss Graph**: Shows how the model loss decreases over epochs
+- **Training Accuracy**: ~99.4% accuracy on training data
+- **Testing Accuracy**: ~97.54% accuracy on test data
+- **Confusion Matrix Heatmap**: Shows which digits are being misclassified
+- **Performance Metrics**: Precision, Recall, and F1-Score for each digit
+
+### **Troubleshooting**
+
+| Issue | Solution |
+|-------|----------|
+| `ModuleNotFoundError: No module named 'idx2numpy'` | Run `pip install idx2numpy` |
+| `ModuleNotFoundError: No module named 'kagglehub'` | Run `pip install kagglehub` |
+| Kaggle API error when downloading dataset | Set up Kaggle API credentials (see Step 3) or manually download from [Kaggle](https://www.kaggle.com/datasets/hojjatk/mnist-dataset) |
+| Out of memory error | Reduce `batch_size` in the training loop or `epochs` value |
+| Slow training | Use GPU acceleration by running in Google Colab with GPU enabled |
+
+### **Modifying Hyperparameters**
+
+To experiment with different hyperparameters, modify these values in the training cell:
+
+```python
+learning_rate = 0.14        # Decrease to train slower, increase for faster learning
+epochs = 70                  # Increase for more training iterations
+batch_size = 500             # Decrease for more stable gradients, increase for faster training
+```
+
+## Project Structure
+
+```
+.
+├── README.md                                    # This file
+└── Neural_Network_from_scratch_in_numpy_.ipynb  # Main Jupyter notebook
+```
+
+## Notes
+
+- This implementation builds a 2-layer hidden neural network from scratch using only NumPy
+- No deep learning frameworks (TensorFlow, PyTorch) are used
+- The model achieves ~97.54% accuracy on the MNIST test set
+- Training takes approximately 5-10 minutes depending on your hardware
