@@ -62,7 +62,7 @@ Below is a clear table of the hyperparameters used (or commonly used) for this p
 
 | Hyperparameter    | Value               | Description |
 |-------------------|---------------------|-------------|
-| learning_rate     | 0.14                | Step size for gradient descent |
+| learning_rate     | 0.04                | Step size for gradient descent |
 | epochs            | 70                  | Number of full passes through the training set |
 | batch_size        | 500                 | Number of samples per gradient update |
 | hidden_neurons    | 64                  | Neurons in the hidden layer |
@@ -70,9 +70,8 @@ Below is a clear table of the hyperparameters used (or commonly used) for this p
 | activation        | Leaky ReLU          | Activation function for hidden layers |
 | output_activation | Softmax             | Activation for the output layer (multiclass) |
 | loss_function     | Cross-entropy       | Loss used for training |
-| optimizer         | SGD                 | Optimization algorithm |
 | weight_init       | Random normal       | Weight initialization method |
-| regularization    | None                | L2 or dropout if used |
+
 
 ## Results
 
