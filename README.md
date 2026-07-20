@@ -45,7 +45,8 @@ Firstly, starting with random thetas and taking the  dot product with input feat
 
 thetas_array=(neurons in current layer+bias, neurons in the next layer+bias)
 like in our dataset  we have 784 features,  and I chose the number of neurons in the second layer to be 64, so I selected the theta shape (784+1,64+1)
-
+                                      
+                                        Input [N x 785] × Theta [785 x 64] = Hidden [N x 64]
 Backpropagate:
 
 When the output layer gives us a values its a prediction. We have to subtract the  prediction from the actual labels so that we can calculate the  error and update the weights
