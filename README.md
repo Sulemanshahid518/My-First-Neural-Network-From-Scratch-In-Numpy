@@ -77,7 +77,6 @@ Below is a clear table of the hyperparameters used (or commonly used) for this p
 ## Results
 
 **Loss Graph**
-## Loss Function:
 
 $$Loss = -\frac{1}{N} \sum_{i=1}^{N} \log(\hat{y}_i)$$
 
