@@ -51,7 +51,10 @@ Backpropagate:
 
 <img width="2564" height="903" alt="image" src="https://github.com/user-attachments/assets/9c45b2d9-179d-467f-b13f-35eb70d613eb" />
 
+For every layer, we have to compute two things:
 
+1) **Neuron Error**: This tells us how much blame each neuron has for the incorrect prediction.
+2) **Gradient Layer**: This calculates exactly how much we need to adjust the weights to reduce that error.
 
 During backpropagation, we compute the error at the output layer and then propagate it backward through the network, layer by layer, by multiplying the error of the current layer by the activations of the previous layer
 
