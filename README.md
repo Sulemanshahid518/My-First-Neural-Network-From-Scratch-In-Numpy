@@ -102,25 +102,12 @@ The project requires the following Python libraries:
 | **idx2numpy** | 1.2+ | Convert MNIST idx format to NumPy arrays |
 | **kagglehub** | Latest | Download MNIST dataset from Kaggle |
 
-## How to Run the Project:
-
-### **Step 1: Install Python**
-
-Ensure you have Python 3.7 or higher installed on your system. You can download it from [python.org](https://www.python.org/downloads/).
-
-### **Step 2: Install Dependencies**
 
 Open your terminal (Command Prompt on Windows, Terminal on macOS/Linux) and run the following command:
 
 ```bash
 pip install numpy matplotlib idx2numpy kagglehub
 ```
-
-**Breakdown of each package:**
-- **numpy**: For numerical computations and array operations
-- **matplotlib**: For plotting training loss and confusion matrix
-- **idx2numpy**: For converting MNIST dataset format
-- **kagglehub**: For downloading the MNIST dataset from Kaggle
 
 ### **Step 3: Set Up Kaggle API (Optional but Recommended)**
 
@@ -137,51 +124,21 @@ If you want to download the MNIST dataset using `kagglehub`, you may need to set
    chmod 600 ~/.kaggle/kaggle.json
    ```
 
-### **Step 4: Run the Jupyter Notebook**
 
 Once dependencies are installed, run the notebook using one of the following methods:
 
-#### **Option A: Using Jupyter Notebook (Recommended)**
 
-```bash
-pip install jupyter
-jupyter notebook Neural_Network_from_scratch_in_numpy_.ipynb
-```
-
-#### **Option B: Using Google Colab (No Setup Required)**
+#### **Option A: Using Google Colab (No Setup Required)**
 
 1. Upload the notebook to [Google Colab](https://colab.research.google.com/)
 2. Run each cell sequentially
 
-#### **Option C: Using VS Code**
+#### **Option B: Using VS Code**
 
 1. Install the Jupyter extension in VS Code
 2. Open the `.ipynb` file
 3. Run each cell by clicking the play button
 
-### **Step 5: Execute the Cells in Order**
-
-The notebook contains the following main sections:
-
-1. **Install Dependencies** - Installs idx2numpy (already done if pip install was successful)
-2. **Import Libraries** - Imports numpy, pandas, matplotlib, idx2numpy, and kagglehub
-3. **Download Dataset** - Downloads the MNIST dataset from Kaggle (requires Kaggle API setup)
-4. **Data Preprocessing** - Normalizes images (0-255 → 0-1) and adds bias terms
-5. **Initialize Network** - Creates random weight matrices (thetas) for each layer
-6. **Training Loop** - Trains the neural network using forward and backward propagation
-7. **Visualize Loss** - Plots the loss graph to show training progress
-8. **Evaluate Performance** - Tests on both training and testing datasets
-9. **Generate Confusion Matrix** - Creates a heatmap showing prediction accuracy per digit
-
-### **Step 6: View Results**
-
-After running all cells, you will see:
-
-- **Loss Graph**: Shows how the model loss decreases over epochs
-- **Training Accuracy**: ~99.4% accuracy on training data
-- **Testing Accuracy**: ~97.54% accuracy on test data
-- **Confusion Matrix Heatmap**: Shows which digits are being misclassified
-- **Performance Metrics**: Precision, Recall, and F1-Score for each digit
 
 ### **Troubleshooting**
 
@@ -202,18 +159,3 @@ learning_rate = 0.14        # Decrease to train slower, increase for faster lear
 epochs = 70                  # Increase for more training iterations
 batch_size = 500             # Decrease for more stable gradients, increase for faster training
 ```
-
-## Project Structure
-
-```
-.
-├── README.md                                    # This file
-└── Neural_Network_from_scratch_in_numpy_.ipynb  # Main Jupyter notebook
-```
-
-## Notes
-
-- This implementation builds a 2-layer hidden neural network from scratch using only NumPy
-- No deep learning frameworks (TensorFlow, PyTorch) are used
-- The model achieves ~97.54% accuracy on the MNIST test set
-- Training takes approximately 5-10 minutes depending on your hardware
