@@ -49,7 +49,11 @@ like in our dataset  we have 784 features,  and I chose the number of neurons in
                                         Input [N x 785] × Theta [785 x 64] = Hidden [N x 64]
 Backpropagate:
 
-When the output layer gives us a values its a prediction. We have to subtract the  prediction from the actual labels so that we can calculate the  error and update the weights
+<img width="2564" height="903" alt="image" src="https://github.com/user-attachments/assets/9c45b2d9-179d-467f-b13f-35eb70d613eb" />
+
+
+
+During backpropagation, we compute the error at the output layer and then propagate it backward through the network, layer by layer, by multiplying the error of the current layer by the activations of the previous layer
 
 ## Results
 
